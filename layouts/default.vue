@@ -1,7 +1,7 @@
 <template>
   <section class="container xs-border xs-text-5 md-text-4">
 
-    <BaelHeader :blogtitle="blogtitle" :thecrumb="this.$store.state.theCrumb" :posts="blogposts" />
+    <BaelHeader :blogtitle="blogtitle" :thecrumb="this.$store.state.theCrumb" :posts="portfolioitems" />
     <nuxt/>
     <SlideOut/>
     <BaelFooter :pagination="paginate" />
@@ -52,6 +52,9 @@ return this.$store.state.pagination
     },
     blogposts() {
       return this.$store.state.blogPosts;
+    },
+    portfolioitems() {
+      return this.$store.state.portfolioItems;
     },
     blogtitle() {
       return this.$store.state.blogTitle;

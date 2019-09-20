@@ -36,6 +36,10 @@ export default {
     allBlogPosts() {
       return this.$store.state.blogPosts;
     },
+
+    allPortfolioItems() {
+      return this.$store.state.portfolioItems;
+    },
   
 
     findCatPosts() {

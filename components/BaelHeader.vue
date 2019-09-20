@@ -50,8 +50,10 @@ export default {
   computed: {
     allPosts() {
       let posts = this.$store.state.blogPosts;
+      let items = this.$store.state.portfolioItems;
       let pages = this.$store.state.allPages;
-      let both = posts.concat(pages);
+      let postsandpages = posts.concat(pages);
+      let both = postsandpages.concat(items);
       return both;
     },
     headerSiteName() {

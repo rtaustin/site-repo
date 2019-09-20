@@ -8,6 +8,7 @@ const createStore = () =>
       menuIsActive: false,
       menuInitial: true,
       blogPosts: [],
+      portfolioItems: [],
       allPages: [],
       navheight: 60,
       blogTitle: '',
@@ -16,6 +17,7 @@ const createStore = () =>
       allTags: [],
       gridItems: [],
       gridNumPosts: '11',
+      gridNumItems: '11',
       gridNumCats: '11',
       gridOffset: '0',
       theThumbnail: '',
@@ -32,6 +34,7 @@ const createStore = () =>
       async nuxtServerInit({ dispatch }) {
         await dispatch('getSiteInfo')
         await dispatch('getBlogPosts')
+        await dispatch('getPortfolioItems')
         await dispatch('getPages')
         await dispatch('getCats')
       },
@@ -46,6 +49,19 @@ const createStore = () =>
 
 
         commit('SET_POSTS', searchposts.reverse())
+
+      },
+      async getPortfolioItems({ state, commit }) {
+        const context = await require.context('~/content/portfolio/items/', false, /\.json$/);
+
+        const searchitems = await context.keys().map(key => ({
+          ...context(key),
+          _path: `/portfolio/${key.replace('.json', '').replace('./', '')}`
+        }));
+
+
+
+        commit('SET_ITEMS', searchitems.reverse())
 
       },
       async getPages({ state, commit }) {
@@ -64,6 +80,11 @@ const createStore = () =>
       setGridNumPosts({ state, commit }) {
         if (state.blogPosts > 12) {
           this.$store.commit("SET_GRIDNUMPOSTS", 12);
+        }
+      },
+      setGridNumItems({ state, commit }) {
+        if (state.portfolioItems > 12) {
+          this.$store.commit("SET_GRIDNUMITEMS", 12);
         }
       },
       setGridNumCats({ state, commit }) {
@@ -101,16 +122,22 @@ const createStore = () =>
       getSiteInfo({ state, commit }) {
         const info = require('~/content/setup/info.json');
         const connect = require('~/content/setup/connect.json');
-        const context = require.context('~/content/blog/posts/', false, /\.json$/);
+        const context = require.context('~/content/portfolio/items/', false, /\.json$/);
 
         const searchposts = context.keys().map(key => ({
           ...context(key),
           _path: `/blog/${key.replace('.json', '').replace('./', '')}`
         }));
 
+        const searchitems = context.keys().map(key => ({
+          ...context(key),
+          _path: `/portfolio/${key.replace('.json', '').replace('./', '')}`
+        }));
+
 
 
         commit('SET_POSTS', searchposts)
+        commit('SET_ITEMS', searchitems)
         commit('SET_INFO', info)
         commit('SET_CONNECT', connect)
 
@@ -123,6 +150,9 @@ const createStore = () =>
       SET_PAGES(state, data) {
         state.allPages = data
       },
+      SET_ITEMS(state, data) {
+        state.portfolioItems = data
+      },
       SET_CATS(state, data) {
         state.allCats = data
       },
@@ -134,6 +164,9 @@ const createStore = () =>
       },
       SET_GRIDNUMPOSTS(state, data) {
         state.gridNumPosts = data
+      },
+      SET_GRIDNUMITEMS(state, data) {
+        state.gridNumItems = data
       },
       SET_GRIDNUMCATS(state, data) {
         state.gridNumCats = data
