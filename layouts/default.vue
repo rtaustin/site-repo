@@ -83,7 +83,7 @@ body {
   font-weight: 400;
   line-height: 1;
 }
-.feat-wrapper {max-height:55vh;width:100%;}
+.feat-wrapper {max-height:75vh;width:100%;}
 .slide-left-enter,
 .slide-right-leave-active {
   transform: translate(50%, 0);
