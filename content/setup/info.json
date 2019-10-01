@@ -3,7 +3,7 @@
   "sitedescription": "Stuff I do.",
   "siteicon": "/images/uploads/icon.png",
   "showmenu": true,
-  "emailsignup": true,
+  "emailsignup": false,
   "altlayout": true,
   "menu": [
     {
