@@ -3,8 +3,8 @@
   "sitedescription": "Stuff I do.",
   "siteicon": "/images/uploads/icon.png",
   "showmenu": true,
-  "emailsignup": true,
-  "altlayout": false,
+  "emailsignup": false,
+  "altlayout": true,
   "menu": [
     {
       "name": "Richard",
