@@ -1,12 +1,8 @@
 {
   "connectlinks": [
     {
-      "name": "Twitter",
-      "url": "https://twitter.com/jasperketone"
-    },
-    {
       "name": "LinkedIn",
-      "url": "https://www.linkedin.com/in/jake-peterson-101/"
+      "url": "https://www.linkedin.com/in/richarda/"
     },
     {
       "name": "Github",
@@ -14,7 +10,7 @@
     },
     {
       "name": "Unsplash",
-      "url": "https://unsplash.com/@jake101"
+      "url": "https://unsplash.com/@rtaustin"
     }
   ]
 }
