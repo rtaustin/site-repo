@@ -1,6 +1,9 @@
 <template>
 <footer class="fill-gray-lighter xs-text-6 md-text-5">
-    <div class="r no-gap">
+    <div class="btm-footer">
+        @RichardAustin 2019
+    </div>
+   <!-- <div class="r no-gap">
 
         <div class="c-12 xs-text-left xs-p2 xs-border">
             <div class="item xs-text-center">
@@ -73,7 +76,7 @@
                 <a href="https://richard.monster">richard ;)</a>
             </div>
         </div>
-    </div>
+    </div> -->
 </footer>
 </template>
 
@@ -169,5 +172,11 @@ export default {
 
 .footer__heading {
     max-width: 100%;
+}
+
+.btm-footer {
+    padding:15px;
+    background:#efefef;
+    border-top: 1px solid #ccc;
 }
 </style>
