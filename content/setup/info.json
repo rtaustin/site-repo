@@ -1,8 +1,8 @@
 {
   "sitename": "Richard",
   "sitedescription": "Stuff I do.",
-  "siteicon": "/images/uploads/icon.png",
-  "showmenu": true,
+  "siteicon": "/images/uploads/face.png",
+  "showmenu": false,
   "emailsignup": false,
   "altlayout": true,
   "menu": [
@@ -10,16 +10,6 @@
       "name": "Richard",
       "position": "1",
       "link": "https://www.richard.monster/"
-    },
-    {
-      "name": "Nuxt.js",
-      "position": "2",
-      "link": "https://www.nuxtjs.org/"
-    },
-    {
-      "name": "Netlify",
-      "position": "3",
-      "link": "https://www.netlify.com/"
     }
   ]
 }
