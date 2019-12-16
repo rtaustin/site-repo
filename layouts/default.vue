@@ -74,13 +74,13 @@ html,
 body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+  font-family: "apercu", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 .main-title {
   font-size: 3rem;
-  font-family: "Archivo Black", sans-serif;
-  font-weight: 400;
+  font-family: "Apercu", "Archivo Black", sans-serif;
+  font-weight: bold;
   line-height: 1;
 }
 .feat-wrapper {max-height:75vh;width:100%;}
