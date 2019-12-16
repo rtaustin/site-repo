@@ -1,6 +1,7 @@
 {
-  "title": "Featured In",
-  "date": "Sunday July 29th, 2018",
+  "title": "Verizon Media CDN Playback Monitoring",
+  "date": "Monday July 29th, 2019",
+  "thumbnail": "/images/uploads/cdn-playback-monitoring-thumb.jpg",
   "category": "",
-  "body": "Thanks to the following websites and newsletters for featuring Bael. If you have a blog using this theme, send me a DM on [Twitter](https://twitter.com/jasperketone) and I'll add you to this page too.\n\n* [Brutalist Websites](http://brutalistwebsites.com/bael-theme.jake101.com/)\n* [Netlify Templates](https://templates.netlify.com/template/nuxt-bael-blog-template/)\n* [Web Tools Weekly](https://mailchi.mp/webtoolsweekly/web-tools-262?e=e97afdd3cb)\n* [VueJS Feed](https://madewithvuejs.com/bael-blog-template-for-netlify-cms)"
+  "body": "Verizon Media developers through doctorate research developed a revolutionary method of video playback monitoring derived directly through the content delivery network. Working with researchers and product teams I further enhanced the usefulness of the research by developing the interface of metric visualizations and interactions that customers use to interact with the data.\n\n![](/images/uploads/cdn-monitoring.jpg)"
 }
