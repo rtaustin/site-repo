@@ -77,11 +77,16 @@ body {
   font-family: "apercu", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
+.title-block{
+  margin:1rem 8%;
+  border-bottom:4px double rgba(0, 0, 0, 0.2) !important
+}
 .main-title {
   font-size: 3rem;
   font-family: "Apercu", "Archivo Black", sans-serif;
   font-weight: bold;
   line-height: 1;
+  text-align: center;
 }
 .feat-wrapper {max-height:75vh;width:100%;}
 .slide-left-enter,
@@ -119,4 +124,12 @@ body {
 }
 
 /*.post-content {max-width:75ch;}*/
+
+.post-content p {
+  font-size:18px;
+}
+
+.bcg-item {
+  padding:3rem 8% !important;
+}
 </style>
