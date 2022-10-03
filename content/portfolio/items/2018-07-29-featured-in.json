@@ -1,7 +1,7 @@
 {
   "title": "Verizon Media CDN Playback Monitoring",
-  "date": "Monday July 29th, 2019",
+  "date": "Wednesday February 23rd, 2022",
   "thumbnail": "/images/uploads/cdn-playback-monitoring-thumb.jpg",
-  "category": "",
-  "body": "Verizon Media developers through doctorate research developed a revolutionary method of video playback monitoring derived directly through the content delivery network. The researchers & product teams and I wanted to further enhance the usefulness of the research by developing an interface of metric visualizations and interactions that customers use to interact with the data, make correlations, and solve playback problems in record time.  \n\n![](/images/uploads/cdn-monitoring.jpg)"
+  "category": "Design",
+  "body": "Handling playback monitoring is a herculean effort. One of the great challenges is not just delivering millions of simultaneous streams but also ensuring they arrive healthy. To understand the health of a stream hundreds of metrics are pulled, cross referenced and calculated. With each stream segment being only 2-4 seconds long, metrics for millions of concurrent sessions pile up extremely quickly.\n\nThis monumental amount of data needs to be analyzed, visualized, and alerted on. For a live event like the NBA Finals or Superbowl knowing if your stream has gone bad is absolutely critical. Just a few minutes can cost a network millions of dollars. \\\n\\\nTo ensure monitoring is as close to live as possible, Verizon Media developers, through doctorate research, developed a revolutionary method of monitoring playback right at the CDN (Content Delivery Network).   \\\n\\\nWe wanted to further enhance the usefulness of the research by our monitoring interfaces with a whole slew of new visualizations and interactions that customers and operators could use to interact with the data, make correlations, and solve playback problems.  \n\n![](/images/uploads/cdn-monitoring.jpg)"
 }
